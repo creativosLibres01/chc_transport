@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" fill="none">
+  <defs>
+    <linearGradient id="trophyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8D078"/>
+      <stop offset="40%" style="stop-color:#D4B85C"/>
+      <stop offset="70%" style="stop-color:#C4A356"/>
+      <stop offset="100%" style="stop-color:#A68B40"/>
+    </linearGradient>
+    <filter id="trophyShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <!-- Asas -->
+  <path d="M25 35 Q15 60 25 85" stroke="url(#trophyGrad)" stroke-width="8" fill="none" stroke-linecap="round" filter="url(#trophyShadow)"/>
+  <path d="M95 35 Q105 60 95 85" stroke="url(#trophyGrad)" stroke-width="8" fill="none" stroke-linecap="round" filter="url(#trophyShadow)"/>
+  <!-- Copa -->
+  <ellipse cx="60" cy="40" rx="28" ry="12" fill="url(#trophyGrad)" filter="url(#trophyShadow)"/>
+  <path d="M32 40 L38 95 Q60 108 82 95 L88 40 Z" fill="url(#trophyGrad)"/>
+  <path d="M38 45 L42 88 Q60 98 78 88 L82 45 Z" fill="#E8D078" opacity="0.5"/>
+  <!-- Base del trofeo -->
+  <rect x="48" y="95" width="24" height="12" rx="2" fill="#8B7340"/>
+  <rect x="42" y="107" width="36" height="8" rx="4" fill="#6B5330"/>
+  <ellipse cx="60" cy="115" rx="22" ry="6" fill="#5A4728"/>
+</svg>

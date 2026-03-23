@@ -1,0 +1,271 @@
+
+{% extends "base.html" %}
+{% block content %}
+<main id="inicio">
+  <section class="hero">
+    <img class="hero-bg" src="{{ url_for('static', filename='img/lima.jpg') }}" alt="Lima histórica">
+    <div class="hero-overlay"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy" data-aos="fade-up">
+        <h1>Movemos personas con <span class="hl">seguridad</span> y <span class="hl">puntualidad</span></h1>
+        <p>Especialistas en <strong>transporte terrestre</strong> y <strong>operación turística</strong>. Flota moderna, conductores certificados y cobertura nacional.</p>
+        <div class="cta">
+          <a class="btn btn-gold" href="#reserva" data-open-reserva><i class="fa-solid fa-ticket"></i> Reservar ahora</a>
+          <a class="btn btn-outline" href="#experiencias"><i class="fa-solid fa-circle-info"></i> Ver servicios</a>
+        </div>
+        <ul class="trust">
+          <li><i class="fa-solid fa-shield"></i> Seguro contra accidentes</li>
+          <li><i class="fa-solid fa-clock"></i> 24/7</li>
+          <li><i class="fa-solid fa-star"></i> +15 años de experiencia</li>
+        </ul>
+      </div>
+      <div class="hero-bus" data-aos="zoom-in" style="--bus-offset-x: -128px; --bus-offset-y: -86px;">
+        <img src="{{ url_for('static', filename='img/bus.png') }}" alt="Bus CHC">
+      </div>
+    </div>
+  </section>
+
+  <section id="por-que-elegir" class="section container">
+    <div class="why-choose glass">
+      <h2 class="why-choose-title" data-aos="fade-up" data-aos-duration="700" data-aos-offset="100">¿Por qué elegir CHC Transport?</h2>
+      <div class="why-choose-grid">
+        <article class="why-choose-item" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="100" data-aos-offset="80">
+          <img class="why-choose-icon" src="{{ url_for('static', filename='img/icons/shield.svg') }}" alt="Escudo seguridad">
+          <h3>Seguridad Garantizada</h3>
+          <p>Vehículos certificados y conductores con amplia experiencia</p>
+        </article>
+        <article class="why-choose-item" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="250" data-aos-offset="80">
+          <img class="why-choose-icon" src="{{ url_for('static', filename='img/icons/clock.svg') }}" alt="Reloj puntualidad">
+          <h3>Puntualidad Absoluta</h3>
+          <p>Respetamos tu tiempo con horarios precisos y confiables</p>
+        </article>
+        <article class="why-choose-item" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="400" data-aos-offset="80">
+          <img class="why-choose-icon" src="{{ url_for('static', filename='img/icons/trophy.svg') }}" alt="Trofeo calidad">
+          <h3>Calidad Premium</h3>
+          <p>Servicio de primera clase en cada viaje que realizamos</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <span id="servicios" class="anchor"></span>
+  <section id="experiencias" class="section experiencias-section">
+    <div class="container">
+      <header class="experiencias-header" data-aos="fade-up">
+        <h2 class="experiencias-title">Experiencias que <span class="hl">Transforman Viajes</span></h2>
+        <p class="experiencias-desc">Ofrecemos transporte de personal, excursiones completas y servicios de carga con la más alta calidad y confiabilidad.</p>
+      </header>
+      <div class="experiencias-grid" data-aos="fade-up" data-aos-delay="100">
+        <article class="exp-card">
+          <div class="exp-card-img-wrap">
+            <img class="exp-card-img" src="{{ url_for('static', filename='img/exp-bus.jpg') }}" alt="Transporte de personal">
+            <span class="exp-card-dot"></span>
+            <div class="exp-card-icon"><i class="fa-solid fa-bus"></i></div>
+          </div>
+          <div class="exp-card-body">
+            <h3>Transporte de Personal</h3>
+            <p>Servicio empresarial especializado para el traslado de colaboradores con puntualidad y confort.</p>
+            <ul class="exp-features">
+              <li>Vehículos ejecutivos</li>
+              <li>Conductores certificados</li>
+              <li>Rutas programadas</li>
+              <li>Seguimiento GPS</li>
+            </ul>
+            <a href="#reserva" class="btn exp-btn" data-open-reserva>Solicitar Servicio</a>
+          </div>
+        </article>
+        <article class="exp-card">
+          <div class="exp-card-img-wrap">
+            <img class="exp-card-img" src="{{ url_for('static', filename='img/exp-turismo.jpg') }}" alt="Excursiones">
+            <span class="exp-card-dot"></span>
+            <div class="exp-card-icon"><i class="fa-solid fa-camera"></i></div>
+          </div>
+          <div class="exp-card-body">
+            <h3>Paseos y Excursiones Full Day</h3>
+            <p>Experiencias turísticas completas con guías especializados y servicios de primera calidad.</p>
+            <ul class="exp-features">
+              <li>Guías profesionales</li>
+              <li>Itinerarios completos</li>
+              <li>Alimentación incluida</li>
+              <li>Grupos reducidos</li>
+            </ul>
+            <a href="#reserva" class="btn exp-btn" data-open-reserva>Solicitar Servicio</a>
+          </div>
+        </article>
+        <article class="exp-card">
+          <div class="exp-card-img-wrap">
+            <img class="exp-card-img" src="{{ url_for('static', filename='img/exp-carga.jpg') }}" alt="Transporte de carga">
+            <span class="exp-card-dot"></span>
+            <div class="exp-card-icon"><i class="fa-solid fa-truck"></i></div>
+          </div>
+          <div class="exp-card-body">
+            <h3>Transporte de Carga</h3>
+            <p>Soluciones logísticas integrales para el transporte seguro de mercancías y materiales.</p>
+            <ul class="exp-features">
+              <li>Carga asegurada</li>
+              <li>Tracking en tiempo real</li>
+              <li>Manipulación especializada</li>
+              <li>Entrega programada</li>
+            </ul>
+            <a href="#reserva" class="btn exp-btn" data-open-reserva>Solicitar Servicio</a>
+          </div>
+        </article>
+        <article class="exp-card">
+          <div class="exp-card-img-wrap">
+            <img class="exp-card-img" src="{{ url_for('static', filename='img/exp-bus.jpg') }}" alt="Shuttle y Eventos">
+            <span class="exp-card-dot"></span>
+            <div class="exp-card-icon"><i class="fa-solid fa-shuttle-space"></i></div>
+          </div>
+          <div class="exp-card-body">
+            <h3>Shuttle / Eventos</h3>
+            <p>Movilidad para ferias, conciertos, convenciones y eventos corporativos. Coordinación integral.</p>
+            <ul class="exp-features">
+              <li>Eventos y convenciones</li>
+              <li>Fiestas y celebraciones</li>
+              <li>Traslados grupales</li>
+              <li>Coordinación dedicada</li>
+            </ul>
+            <a href="#reserva" class="btn exp-btn" data-open-reserva>Solicitar Servicio</a>
+          </div>
+        </article>
+      </div>
+      <div class="cta-zona" data-aos="fade-up">
+        <div class="cta-zona-card">
+          <h3>¿Necesitas servicio en otra zona?</h3>
+          <p>Evaluamos la posibilidad de expandir nuestros servicios según la demanda y ubicación.</p>
+          <a href="#contacto" class="btn cta-zona-btn">Consultar Disponibilidad</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="socio-viaje" class="section socio-section">
+    <div class="container">
+      <header class="socio-header" data-aos="fade-up">
+        <h2 class="socio-title">Más que Transporte, <span class="hl">Somos tu Socio de Viaje</span></h2>
+      </header>
+      <div class="socio-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="socio-content">
+          <h3 class="socio-brand">CHC TRANSPORT SERVICE SAC</h3>
+          <p>Desde 2009 nos especializamos en transporte de personal, operación turística y logística en el Perú. Con una flota moderna y conductores certificados, ofrecemos soluciones de movilidad confiables para empresas, turistas y eventos.</p>
+          <p>Nuestra experiencia nos respalda: seguridad, puntualidad y servicio de primera clase en cada destino que cubrimos a nivel nacional.</p>
+          <div class="socio-stats">
+            <article class="socio-stat-card">
+              <div class="socio-stat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+              <span class="socio-stat-num">15+</span>
+              <span class="socio-stat-label">Años de Experiencia</span>
+            </article>
+            <article class="socio-stat-card">
+              <div class="socio-stat-icon"><i class="fa-solid fa-user-check"></i></div>
+              <span class="socio-stat-num">50K+</span>
+              <span class="socio-stat-label">Clientes Satisfechos</span>
+            </article>
+            <article class="socio-stat-card">
+              <div class="socio-stat-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <span class="socio-stat-num">30+</span>
+              <span class="socio-stat-label">Destinos Cubiertos</span>
+            </article>
+            <article class="socio-stat-card">
+              <div class="socio-stat-icon"><i class="fa-solid fa-award"></i></div>
+              <span class="socio-stat-num">100%</span>
+              <span class="socio-stat-label">Compromiso</span>
+            </article>
+          </div>
+        </div>
+        <div class="socio-img-wrap">
+          <img class="socio-img" src="{{ url_for('static', filename='img/socio-viaje.jpg') }}" alt="Flota CHC Transport">
+          <div class="socio-overlay">
+            <h4>Nuestro Compromiso</h4>
+            <p>Excelencia en cada viaje, seguridad en cada kilómetro.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cobertura" class="section alt">
+    <div class="container">
+      <header class="section-header" data-aos="fade-up">
+        <h2>Cobertura</h2>
+        <p>Atendemos a nivel nacional, con base en Lima.</p>
+      </header>
+      <div class="coverage-grid" data-aos="fade-up" data-aos-delay="100">
+        <span class="tag">Lima Metropolitana</span><span class="tag">Callao</span><span class="tag">Ica</span><span class="tag">Arequipa</span><span class="tag">Cusco</span><span class="tag">La Libertad</span><span class="tag">Piura</span><span class="tag">Lambayeque</span><span class="tag">Junín</span><span class="tag">Áncash</span><span class="tag">Tumbes</span><span class="tag">Tacna</span>
+      </div>
+      <div class="map-embed" data-aos="fade-up" data-aos-delay="150">
+        <iframe title="Mapa Lima" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.7774850787367!2d-77.0325406!3d-12.046373399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8be646a2a67%3A0xf0ab0d23c3e64c11!2sPlaza%20Mayor%20de%20Lima!5e0!3m2!1ses-419!2spe!4v1700000000000" 
+          width="100%" height="320" style="border:0;"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="section nos-section">
+    <div class="container">
+      <header class="nos-header" data-aos="fade-up">
+        <h2>Nosotros</h2>
+        <p class="nos-subtitle">Compromiso con la seguridad, puntualidad y la mejor experiencia a bordo.</p>
+      </header>
+      <div class="nos-grid" data-aos="fade-up" data-aos-delay="100">
+        <article class="nos-card">
+          <div class="nos-card-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Misión</h3>
+          <p>Brindar servicios de transporte confiables y eficientes, cuidando cada detalle del viaje. Cada traslado es una oportunidad para superar expectativas y generar confianza en nuestros clientes.</p>
+        </article>
+        <article class="nos-card">
+          <div class="nos-card-icon"><i class="fa-solid fa-eye"></i></div>
+          <h3>Visión</h3>
+          <p>Ser referentes en movilidad terrestre y operación turística en el Perú, reconocidos por nuestra excelencia operativa y el compromiso con cada persona que confía en nosotros.</p>
+        </article>
+        <article class="nos-card nos-card-wide">
+          <div class="nos-card-icon"><i class="fa-solid fa-heart"></i></div>
+          <h3>Nuestros Valores</h3>
+          <div class="nos-values">
+            <div class="nos-value-item">
+              <i class="fa-solid fa-shield"></i>
+              <span><strong>Seguridad</strong> — Prioridad en cada kilómetro recorrido</span>
+            </div>
+            <div class="nos-value-item">
+              <i class="fa-solid fa-clock"></i>
+              <span><strong>Puntualidad</strong> — Respetamos tu tiempo y el de tus equipos</span>
+            </div>
+            <div class="nos-value-item">
+              <i class="fa-solid fa-star"></i>
+              <span><strong>Servicio</strong> — Atención personalizada y de primera clase</span>
+            </div>
+            <div class="nos-value-item">
+              <i class="fa-solid fa-gem"></i>
+              <span><strong>Integridad</strong> — Honestidad y transparencia en cada relación</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section alt">
+    <div class="container">
+      <header class="section-header" data-aos="fade-up">
+        <h2>Contáctanos</h2>
+        <p>Cuéntanos tu necesidad de transporte y te responderemos pronto.</p>
+      </header>
+      <div class="contact-grid" data-aos="fade-up" data-aos-delay="100">
+        <form id="formContacto" class="form-grid">
+          <div><label>Nombre</label><input name="nombre" required></div>
+          <div><label>Correo</label><input name="correo" type="email" required></div>
+          <div><label>Teléfono</label><input name="telefono" required></div>
+          <div class="full"><label>Mensaje</label><textarea name="mensaje" rows="4" required></textarea></div>
+          <div class="actions"><button type="submit" class="btn btn-gold">Enviar</button></div>
+        </form>
+        <aside class="contact-info glass">
+          <h3>Atención 24/7</h3>
+          <ul><li><i class="fa-solid fa-phone"></i> +51 999 999 999</li><li><i class="fa-solid fa-envelope"></i> ventas@transporteshuanca.pe</li><li><i class="fa-solid fa-location-dot"></i> Lima, Perú</li></ul>
+          <p>¿Prefieres WhatsApp? <a class="link" id="linkWspContacto" target="_blank">Escríbenos aquí</a>.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <span id="reserva" class="anchor"></span>
+</main>
+{% endblock %}
