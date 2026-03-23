@@ -1,0 +1,2 @@
+EJECUTAR CODIGO
+python -m flask --app transportes_huanca_demo.app run --debug --port 5000
