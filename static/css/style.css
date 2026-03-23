@@ -818,9 +818,9 @@ input:focus, textarea:focus{border-color:var(--gold)}
   margin-top: -340px;   /* Bajado para separarlo del nav */
 }
 
-/* En pantallas medianas y pequeñas */
+/* En tablets: mantener el cuadro en posición similar a laptop (no subir tanto) */
 @media (max-width: 992px){
-  .hero .hero-copy{ margin-top: -18px; }
+  .hero .hero-copy{ margin-top: 8vh; }
 }
 @media (max-width: 600px){
   .hero .hero-copy{ margin-top: -8px; }
@@ -860,4 +860,16 @@ input:focus, textarea:focus{border-color:var(--gold)}
 }
 @media (max-width: 600px){
   .hero .hero-bus{ margin-top: 0; }   /* en móvil, sin corrimiento para evitar recortes */
+}
+
+/* Móvil: anclar el bus abajo y centrado horizontalmente en la pantalla */
+@media (max-width: 768px){
+  .hero .hero-bus{
+    top: auto;
+    bottom: 2%;
+    left: 10vw;
+    right: auto;
+    margin-left: 0;
+    transform: translate(-50%, 0);
+  }
 }
